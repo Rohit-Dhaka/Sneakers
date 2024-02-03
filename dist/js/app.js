@@ -99,7 +99,7 @@ const firstcard = [
     },
 ]
 const cardcontainer1 = document.getElementById("cardcontainer1");
-firstcard.forEach((firstcard) => {  
+firstcard.forEach((firstcard) => {
     const cardfirst = document.createElement("div");
     cardfirst.innerHTML = `  
 <div class="card rounded-[10px] max-w-[312px] shadow-card-shadow hover:shadow-card-hover duration-300 ease-linear">
@@ -238,4 +238,7 @@ cards.forEach((card) => {
     `
     cardcontainer.appendChild(cardelement)
 })
-
+// get year 
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("year").innerHTML = year
