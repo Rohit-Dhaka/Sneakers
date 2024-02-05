@@ -40,10 +40,10 @@
 /* js card */
 .stylecard{
   border-radius: 17px;
-  border: 1px solid #E0E0E0;
-  /* padding: 18px 14px 30px 14px; */
-  
-  
+  border: 1px solid #E0E0E0;  
+}
+.nav-links:hover{
+  -webkit-text-stroke: 1px black;
 }
 
 

@@ -102,6 +102,7 @@ const cardcontainer1 = document.getElementById("cardcontainer1");
 firstcard.forEach((firstcard) => {
     const cardfirst = document.createElement("div");
     cardfirst.innerHTML = `  
+ <div class="max-w-[25%] px-[12px] ">
 <div class="card rounded-[10px] max-w-[312px] shadow-card-shadow hover:shadow-card-hover duration-300 ease-linear">
 <div class="flex items-center justify-center py-[27px] px-[44px] border rounded-t-[10px]">
     <img src="${firstcard.cardimg}" alt="card-img" class="hover:scale-[1.1] duration-300">
@@ -143,6 +144,7 @@ firstcard.forEach((firstcard) => {
     <p class="font-poppins font-semibold text-[16px] leading-[20px] text-[#007BFF] pt-[8px] cursor-pointer">${firstcard.foot}</p>
 </div>
 </div>      
+</div>
   
     `
     cardcontainer1.appendChild(cardfirst)
