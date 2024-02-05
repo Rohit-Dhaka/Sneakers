@@ -897,10 +897,6 @@ video {
   max-width: 1315px;
 }
 
-.max-w-\[25\%\]{
-  max-width: 25%;
-}
-
 .max-w-\[312px\]{
   max-width: 312px;
 }
@@ -1880,6 +1876,11 @@ video {
 .rounded-t-\[10px\]{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.rounded-t-\[17px\]{
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
 }
 
 .rounded-bl{

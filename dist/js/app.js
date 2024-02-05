@@ -102,23 +102,22 @@ const cardcontainer1 = document.getElementById("cardcontainer1");
 firstcard.forEach((firstcard) => {
     const cardfirst = document.createElement("div");
     cardfirst.innerHTML = `  
- 
-<div class="card rounded-[10px] max-w-[312px] shadow-card-shadow hover:shadow-card-hover duration-300 ease-linear">
-<div class="flex items-center justify-center py-[27px] px-[44px] border rounded-t-[10px]">
-    <img src="${firstcard.cardimg}" alt="card-img" class="hover:scale-[1.1] duration-300">
-</div>
-<div class="flex items-center justify-between px-[19px] pt-[28px]">
-    <div class="flex items-center gap-[17px]">
-        <p class="font-poppins text-[16px] leading-[20px]">${firstcard.pricename}</p>
-        <p class="font-poppins font-semibold text-[20px] leading-[25px]">${firstcard.price}</p>
-    </div>
-    <div class="flex items-center">
-        <button
-            class="before:ease relative overflow-hidden before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-[#FF0000]  before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180 shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48  font-poppins text-[10px] leading-[12.5px] bg-[#28A745] text-white py-[4px] px-[11px] rounded-[7px] text-nowrap">
+    
+    <div class="card rounded-[10px] max-w-[312px] shadow-card-shadow hover:shadow-card-hover duration-300 ease-linear">
+        <div class="flex items-center justify-center py-[27px] px-[44px] border rounded-t-[10px]">
+            <img src="${firstcard.cardimg}" alt="card-img" class="hover:scale-[1.1] duration-300">
+        </div>
+        <div class="flex items-center justify-between px-[19px] pt-[28px]">
+            <div class="flex items-center gap-[17px]">
+                <p class="font-poppins text-[16px] leading-[20px]">${firstcard.pricename}</p>
+                <p class="font-poppins font-semibold text-[20px] leading-[25px]">${firstcard.price}</p>
+            </div>
+        <div class="flex items-center">
+            <button class="before:ease relative overflow-hidden before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-[#FF0000]  before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180 shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48  font-poppins text-[10px] leading-[12.5px] bg-[#28A745] text-white py-[4px] px-[11px] rounded-[7px] text-nowrap">
             <span class="relative z-10">${firstcard.cardbtn}</span></button>
+        </div>
     </div>
-</div>
-<div class="px-[19px] pb-[31px]">
+    <div class="px-[19px] pb-[31px]">
     <p class="font-poppins text-[16px] leading-[20px] pt-[14px] pb-[10px]">${firstcard.size}</p>
     <div class="flex justify-between">
         <button
@@ -129,21 +128,15 @@ firstcard.forEach((firstcard) => {
             class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden  transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">
             ${firstcard.btn3}</button>
     </div>
-    <div class="flex justify-between pt-[12px]">
-        <button
-            class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">
-            ${firstcard.btn4}</button>
-        <button
-            class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden  transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">
-            ${firstcard.btn5}</button>
-        <button
-            class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden  transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">
-            ${firstcard.btn6}</button>
-    </div>
-    <p class="font-poppins text-[16px] leading-[20px] pt-[19.8px]">${firstcard.view}</p>
-    <p class="font-poppins font-semibold text-[16px] leading-[20px] text-[#007BFF] pt-[8px] cursor-pointer">${firstcard.foot}</p>
-</div>
-</div>      
+        <div class="flex justify-between pt-[12px]">
+            <button class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">${firstcard.btn4}</button>
+            <button class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden  transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">${firstcard.btn5}</button>
+            <button class="hover:bg-[#28A745] cursor-pointer hover:text-white before:ease relative overflow-hidden  transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700  hover:before:-translate-x-40 font-poppins font-medium text-[16px] leading-[20px] border border-[#E0E0E0] py-[8px] px-[32px] rounded-[40px]">${firstcard.btn6}</button>
+        </div>
+            <p class="font-poppins text-[16px] leading-[20px] pt-[19.8px]">${firstcard.view}</p>
+            <p class="font-poppins font-semibold text-[16px] leading-[20px] text-[#007BFF] pt-[8px] cursor-pointer">${firstcard.foot}</p>
+        </div>
+    </div>      
 
   
     `
@@ -223,7 +216,7 @@ cards.forEach((card) => {
     cardelement.className = "stylecard"
     cardelement.innerHTML =
         `
-    <div class="overflow-hidden" >
+    <div class="overflow-hidden rounded-t-[17px]">
     <img src="${card.shoesImage}" alt="card-image" class="hover:scale-[1.1] duration-300">
     </div>     
     <div class="px-[14px] pt-[18px] pb-[30px]  flex justify-between items-start"> 
